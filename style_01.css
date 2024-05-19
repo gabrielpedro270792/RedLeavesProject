@@ -1,0 +1,3540 @@
+/* GENERAL SETTINGS */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 1vw;
+}
+
+:root{
+    --clr--dark: #100c0b;
+    --clr--red: #ed1d0a;
+    --clr--pink: #f9a5a3;
+    --clr--white: #ffffff;
+    --fnt--Jakarta: "Plus Jakarta Sans", sans-serif;
+    --fnt--Bodoni: "Libre Bodoni", serif;
+}
+
+.interface{
+    width: 1380px;
+    padding: 32px 140px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+li{
+    list-style-type: none;
+}
+
+#txt-site-top-contact{
+    margin-top: -2rem;
+}
+
+#txt-site-top-our-approach{
+    margin-top: -2.3rem;
+}
+
+#txt-site-top-about-us{
+    margin-top: -2.3rem;
+}
+
+#txt-site-top-our-story{
+    margin-top: -2.3rem;
+}
+
+#txt-site-top-projects{
+    margin-top: -2%;
+    color: var(--clr--white);
+}
+
+#txt-site-top-terms{
+    margin-top: -2.3rem;
+}
+
+#txt-site-top-policies{
+    margin-top: -2.3rem;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+a{
+    color: var(--clr--white);
+    font-size: 10px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+
+
+/* Fonts */
+
+h1{
+    font-size: 45px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+h2{
+    font-size: 2.5rem;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+h3{
+    font-size: 1.875rem;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+h4{
+    font-size: 1.25rem;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+p{
+    font-size: 1.300rem;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+em{
+    font-family: "Libre Bodoni", serif;
+}
+
+/* Links */
+
+nav a{
+    font-size: 1.1rem;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+nav a::after{
+    content: " ";
+    width: 0%;
+    height: 1px;
+    background-color: var(--clr--white);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s;
+    
+}
+
+nav a:hover::after{
+    width: 100%;
+}
+
+.dyn-link{
+    text-decoration: none;
+    color: var(--clr--white);
+    font-size: 12px;
+    position: relative;
+    padding: 2px;
+}
+
+.dyn-link::after{
+    content: " ";
+    width: 0%;
+    height: 1px;
+    background-color: var(--clr--white);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.dyn-link:hover::after{
+    width: 100%;
+}
+
+/* Buttons */
+
+.btn-standard button{
+    padding: 15px 50px;
+    background-color: rgba(255, 0, 0, 0);
+    border: 1px solid white;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.4s ease-in-out;
+    margin-top: 1.25rem;
+    font-weight: -400;
+}
+
+.btn-standard button{
+    text-decoration: none;
+    color: var(--clr--white);
+    font-size: 13px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+
+}
+
+.btn-standard button a:hover{
+    text-decoration: none;
+    color: var(--clr--dark);
+}
+
+button:hover{
+    background-color: var(--clr--white);
+    color: var(--clr--dark);
+}
+
+.btn-black button{
+    padding: 15px 50px;
+    background-color: rgba(255, 0, 0, 0);
+    border: 1px solid var(--clr--dark);
+    cursor: pointer;
+    color: var(--clr--dark);
+    transition: 0.4s ease-in-out;
+    margin-top: 1.25rem;
+    font-size: 13px;
+    
+}
+
+.btn-black button{
+    text-decoration: none;
+    color: var(--clr--dark);
+}
+
+.btn-black button a:hover{
+    text-decoration: none;
+    color: var(--clr--white);
+}
+
+.btn-black button:hover{
+    background-color: var(--clr--dark);
+    color: var(--clr--white);
+}
+
+
+
+
+
+#btnLeiaMais{
+    text-decoration: none;
+    color: var(--clr--dark);
+    position: relative;
+    padding: 2px;
+}
+
+#btnLeiaMais p::after{
+    content: " ";
+    width: 0%;
+    height: 1px;
+    background-color: var(--clr--dark);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+#btnLeiaMais p:hover{
+    width: 100%;
+}
+
+.dyn-link{
+    text-decoration: none;
+    color: var(--clr--white);
+    font-size: 12px;
+    position: relative;
+    padding: 2px;
+}
+
+.dyn-link::after{
+    content: " ";
+    width: 0%;
+    height: 1px;
+    background-color: var(--clr--white);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.dyn-link:hover::after{
+    width: 100%;
+}
+
+.dyn-link-p{
+    text-decoration: none;
+    color: var(--clr--dark);
+    position: relative;
+    padding: 2px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.dyn-link-p::after{
+    content: " ";
+    width: 0%;
+    height: 1px;
+    background-color: var(--clr--red);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.dyn-link-p:hover::after{
+    width: 14%;
+    font-weight: bolder;
+}
+
+.dyn-link-j{
+    text-decoration: none;
+    color: var(--clr--red);
+    font-size: 2rem;
+    position: relative;
+    padding: 2px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.dyn-link-j::after{
+    content: " ";
+    width: 0%;
+    height: 1px;
+    background-color: var(--clr--red);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.dyn-link-j:hover::after{
+    width: 14%;
+    font-weight: bolder;
+}
+
+.dyn-link-je{
+    text-decoration: none;
+    color: var(--clr--red);
+    font-size: 2rem;
+    position: relative;
+    padding: 2px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.dyn-link-je::after{
+    content: " ";
+    width: 0%;
+    height: 1px;
+    background-color: var(--clr--red);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.dyn-link-je:hover::after{
+    width: 14%;
+    font-weight: bolder;
+}
+
+
+.dyn-link-gi{
+    text-decoration: none;
+    color: var(--clr--red);
+    font-size: 2rem;
+    position: relative;
+    padding: 2px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.dyn-link-gi::after{
+    content: " ";
+    width: 0%;
+    height: 1px;
+    background-color: var(--clr--red);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.dyn-link-gi:hover::after{
+    width: 14%;
+    font-weight: bolder;
+}
+
+.dyn-link-hu{
+    text-decoration: none;
+    color: var(--clr--red);
+    font-size: 2rem;
+    position: relative;
+    padding: 2px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.dyn-link-hu::after{
+    content: " ";
+    width: 0%;
+    height: 1px;
+    background-color: var(--clr--red);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.dyn-link-hu:hover::after{
+    width: 14%;
+    font-weight: bolder;
+}
+
+
+#btnLeiaMaisA p{
+    padding: 1rem 2.188rem;
+    font-size: 0.938rem;
+    background-color: rgba(255, 0, 0, 0);
+    border: px solid var(--clr--dark);
+    cursor: pointer;
+    color: var(--clr--dark);
+    transition: 0.4s ease-in-out;
+    margin-top: 1.25rem;
+}
+#btnLeiaMaisA p::after{
+    content: " ";
+    width: 0%;
+    height: 1px;
+    background-color: var(--clr--dark);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+#btnLeiaMaisA p:hover{
+    background-color: var(--clr--dark);
+    color: var(--clr--white);
+}
+
+#btnLeiaMaisB p{
+    text-decoration: none;
+    color: var(--clr--dark);
+    font-size: 12px;
+    position: relative;
+    padding: 2px;
+}
+
+#btnLeiaMaisB p::after{
+    content: " ";
+    width: 0%;
+    height: 1px;
+    background-color: var(--clr--dark);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+#btnLeiaMaisB p:hover{
+    width: 100%;
+}
+
+#mais{
+    font-size: 1.5rem;
+    transition: 2s ease-in-out;
+}
+
+#maisA{
+    font-size: 1.5rem;
+    transition: 2s ease-in-out;
+}
+
+#maisB{
+    font-size: 1.5rem;
+    transition: 2s ease-in-out;
+}
+
+#maisC{
+    font-size: 1.5rem;
+    transition: 2s ease-in-out;
+}
+
+#maisD{
+    font-size: 1.5rem;
+    transition: 2s ease-in-out;
+}
+
+
+
+/* Blocks Setting */
+
+.red-block-right{
+    position: absolute;
+    right: 0;
+    margin-top: 797px;
+}
+
+.red-block-left{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.white-block-right{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.white-block-left{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.black-block-right{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.black-block-left{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.pink-block-right{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.pink-block-left{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.red-b-block-right{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.red-b-block-left{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.line-white{
+    width: 445px;
+    height: 118px;
+    background-color: var(--clr--white);
+}
+
+.line-black{
+    width: 445px;
+    height: 118px;
+    background-color: var(--clr--dark);
+}
+
+.line-red{
+    width: 445px;
+    height: 118px;
+    background-color: var(--clr--red);
+    position: relative;
+    right: 0;
+    margin-right: -15px;
+}
+
+.line-pink{
+    width: 445px;
+    height: 118px;
+    background-color: var(--clr--pink);
+}
+
+
+
+/* HOME PAGE */
+
+/* Top of the page */
+
+#home{
+    /*background-image: url(/Assets/Home/Coming_Home5\ copy.jpg);*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 100vw;
+    height: 915px;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Header */
+
+header{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    z-index: 20;
+    width: 1380px;
+    margin: 0 auto;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.menu-desktop{
+    margin-left: 354px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    margin-top: 0px;
+}
+
+.menu-desktop ul{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+header .menu-desktop a:hover, header .languages a:hover, header .menu-desktop span:hover{
+    color: rgb(255, 255, 255);
+    transform: scale(1.00);
+    font-weight: bolder;
+    font-family: "Plus Jakarta Sans", sans-serif;
+ }
+ 
+header .menu-desktop a, header .languages a, header .languages span{
+     color: rgb(222, 222, 222);
+     text-decoration: none;
+     display: inline-block;
+     transition: .2s;
+ }
+
+header nav.menu-desktop ul li{
+    display: inline-block;
+}
+
+header nav.menu-desktop ul li{
+}
+
+header .interface .languages{
+    margin-left: 135px;
+}
+
+header .interface .languages span{
+    margin-left: 0.25rem;
+    color: var(--clr--white);
+    font-size: 14px;
+}
+
+header .interface .languages a{
+    margin-left: 0.25rem;
+    text-decoration: none;
+    color: var(--clr--white);
+    font-size: 14px;
+}
+
+/* Site top */
+
+.site-top{
+    transform: translateY(179px);
+    position: absolute;
+}
+
+#line-1-top{
+    margin-top: -1rem;
+}
+
+#line-1-top{
+    margin-top: -1rem;
+}
+
+.site-top{
+    position: relative;
+    top: 0;
+    margin: 0 auto;
+}
+
+.site-top .txt-site-top h1{
+    color: var(--clr--white);
+    margin-top: 0px;
+}
+
+
+.site-top .txt-site-top em{
+    margin-left: 70px;
+    font-size: 50px;
+    font-family: "Libre Bodoni", serif;
+}
+
+.site-top .btn-standard{
+    margin-left: 0px;
+}
+
+/* Squares Settings */
+
+.equal-sign-main{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 58px;
+    position: absolute;
+    right: 0;
+    z-index: 3000;
+    margin-top: 570px;
+    margin-right: -15px;
+}
+
+.equal-sign-main .line-1{
+    width: 145px;
+    height: 58px;
+    background-color: white;
+}
+
+main .equal-sign-main-pages{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 60px;
+    position: absolute;
+    right: 0;
+    margin-top: -10%;
+}
+
+main .equal-sign-main-pages .line-1{
+    width: 200px;
+    height: 60px;
+    background-color: white;
+}
+
+#btn-open-menu .equal-sign-menu-mobile{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: .5rem;
+    position: absolute;
+    margin-top: -2.5rem;
+    margin-left: -8rem;
+}
+
+#btn-open-menu .equal-sign-menu-mobile .line-1-menu-mobile{
+    width: 6rem;
+    height: 0.5rem;
+    background-color: white;
+}
+
+
+.equal-sign{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 58px;
+    position: absolute;
+    right: 0;
+    margin-top: 350px;
+    margin-right: 65px;
+}
+
+.equal-sign .line-1{
+    width: 220px;
+    height: 58px;
+    background-color: white;
+}
+
+/* Second Section Home */
+
+section.second-section-home{
+    background-color: var(--clr--red);
+    width: 100vw;
+    height: 36rem;
+    position: relative;
+}
+
+.second-section-home .interface .flex{
+    margin-top: 4.3rem;
+    gap: 3rem;
+    display: flex;
+}
+
+/*.second-section-home .interface .flex .img-second-section-home{
+    width: 40%;
+}*/
+
+.second-section-home .interface .flex .img-second-section-home{
+    width: 100%;
+    height: 50%;
+    margin: 0rem auto;
+}
+
+.second-section-home .interface .flex .img-second-section-home img{
+    width: 100%;
+}
+
+.second-section-home .interface .flex .txt-second-section-home h2{
+    color: var(--clr--white);
+}
+
+.second-section-home .interface .flex .txt-second-section-home p{
+    font-size: 1.300rem;
+    color: var(--clr--white);
+    margin-top: 3rem;
+    font-weight: 200;
+}
+
+.second-section-home .interface .flex .txt-second-section-home em{
+    font-size: 3rem;
+}
+
+#btn-standard-second-section-home{
+    margin-top: 1rem;
+}
+
+/* Third Section Home */
+
+section.third-section-home{
+    background-color: var(--clr--pink);
+    width: 100vw;
+    height: 120rem;
+    position: relative;
+}
+
+
+section.third-section-home{
+    background-color: var(--clr--pink);
+    width: 100vw;
+    height: 36rem;
+    position: relative;
+}
+
+.third-section-home .interface .flex{
+    margin-top: 3.75rem;
+    gap: 4.813rem;
+    align-items: center;
+}
+
+.third-section-home .interface .flex .txt-third-section-home h2{
+    color: var(--clr--dark);
+    font-size: 3rem;
+}
+
+.third-section-home .interface .flex .txt-third-section-home p{
+    font-size: 1.3rem;
+    color: var(--clr--dark);
+    margin-top: 0.5rem;
+}
+
+.third-section-home .interface .flex .txt-third-section-home em{
+    font-size: 3rem;
+}
+
+.third-section-home .interface .flex .img-third-section-home{
+    z-index: 1;
+    margin-top: -2.5rem;
+}
+
+#btn-standard-third-section-home{
+    margin-top: 1rem;
+}
+
+
+/* Projects Section */
+
+section.projects{
+    background-color: var(--clr--dark);
+    width: 100vw;
+    height: 55%;
+    position: relative;
+}
+
+
+section.projects h2{
+    color: var(--clr--white);
+    font-size: 3rem;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    margin-left: 12rem;
+    padding: 5rem 0rem;
+}
+
+.mobile-project-title{
+    display: none;
+}
+
+section.projects em{
+    color: var(--clr--white);
+    font-size: 3rem;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+
+section.projects .interface .flex{
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    height: 10%;
+} 
+
+section.projects .interface .flex .project-box{
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    justify-content: space-between;
+    transform: translateX(3rem);
+}
+
+section.projects .interface .flex .project-box .txt-project-box{
+    width: 40%;
+    z-index: 1;
+    transform: translateX(8rem);
+}
+
+section.projects .interface .flex .project-box .txt-project-box a{
+    font-size: 1rem;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+section.projects .interface .flex{
+    
+    margin-top: -2rem;
+}
+
+section.projects .interface .flex .project-box{
+    width: 110%;
+}
+
+section.projects .interface .flex .project-box .img-project-box{
+    width: 150%;
+}
+
+#reserve-box{
+    flex-direction: row-reverse;
+    transform: translateX(3rem);
+}
+
+#txt-project-box-reverse{
+    transform: translateX(-18rem);
+}
+
+.projects .interface .flex .project-box .img-project-box{
+    width: 100%;
+    margin-right: 7.5rem;
+}
+
+.projects .interface .flex .project-box .img-project-box img{
+    width: 100%;
+}
+
+
+section.projects .interface .flex .project-box .txt-project-box h3, section.projects .interface .flex .project-box .txt-project-box a{
+    color: var(--clr--white);
+}
+
+section.projects .interface .flex .project-box .txt-project-box h3{
+    font-size: 2.5rem;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    white-space: nowrap;
+}
+
+
+/* PROJECTS PAGE */
+
+.img-fundo-project{
+    background-image: url(/Assets/Projects/S11.\ All\ we\ have\ is\ us._1.12.1\ teste.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 18%;
+    position: relative;
+    background-size: cover;
+}
+
+
+
+main .equal-sign-main-projects{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 3.5rem;
+    position: absolute;
+    right: 0;
+    margin-top: -15rem;
+}
+
+main .equal-sign-main-projects .line-1{
+    width: 9.188rem;
+    height: 3.625rem;
+    background-color: white;
+}
+
+/* ABOUT US PAGE */
+
+#about-us{
+    background-image: url(/Assets/About_Us/IMG_7533teste.jpg);
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 45rem;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+
+#forth-section-about-us .interface .flex .txt-forth-section-about-us, #fifth-section-about-us .interface .flex .txt-fifth-section-about-us, #sixth-section-about-us .interface .flex .txt-sixth-section-about-us{
+    width: 50%;
+}
+
+#forth-section-about-us .interface .flex .img-forth-section-about-us, #fifth-section-about-us- .interface .flex .img-fifth-section-about-us, #sixth-section-about-us .interface .flex .img-sixth-section-about-us{
+    width: 50%;
+}
+
+section.second-section-about-us{
+    background-color: var(--clr--red);
+    height: 21.875rem;
+    width: 100vw;
+}
+
+
+section.second-section-about-us .interface{
+    width: 100%;
+    margin-left: 0rem;
+}
+
+section.second-section-about-us .interface .equal-sign-footer{
+    width: 100%;
+    margin-left: 12rem;
+}
+
+section.second-section-about-us .interface .flex{
+    margin-top: 2rem;
+    justify-content: space-between;
+}
+
+section.second-section-about-us .interface .flex .txt-second-section-about-us-box{
+    width: 80%;
+    text-align: left;
+}
+
+section.second-section-about-us .interface .flex #equal-sign-footer-about-us-second-section{
+    width: 20%;
+}
+
+
+section.second-section-about-us .interface .flex .txt-second-section-about-us-box h3, section.second-section-about-us .interface .flex .txt-second-section-about-us-box p{
+    color: var(--clr--white);
+
+}
+
+section.second-section-about-us .interface .flex .txt-second-section-about-us-box h3{
+    font-size: 30px;
+    width: 100%;
+    font-family: "Plus Jakarta Sans", sans-serif;
+
+}
+
+section.second-section-about-us .interface .flex .txt-second-section-about-us-box p{
+    font-size: 1.3rem;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    margin-top: -1.3rem;
+}
+
+#second-equal{
+    margin-top: -2rem;
+}
+
+section.third-section-about-us{
+    background-color: var(--clr--pink);
+    height: 700px;
+    position: relative;
+}
+
+section.third-section-about-us .interface .flex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+section.third-section-about-us .interface .flex .txt-box-third-section-about-us-page{
+    width: 60%;
+    height: 40rem;
+    margin-top: 6rem;
+}
+
+section.third-section-about-us .interface .flex .txt-box-third-section-about-us-page-buttons-box{
+    margin-top: 0rem;
+}
+
+
+section.third-section-about-us .interface .flex .txt-box-third-section-about-us-page h3{
+    width: 100vw;
+    font-size: 1.6rem;
+}
+
+section.third-section-about-us .interface .flex .txt-box-third-section-about-us-page p{
+    
+    font-size: 1.2rem;
+}
+
+section.third-section-about-us .interface .flex .txt-box-third-section-about-us-page p b{
+    font-size: 1.2rem;
+}
+
+section.forth-section-about-us{
+    height: 75rem;
+    color: var(--clr--white);
+    background-color: var(--clr--dark);
+}
+
+section.forth-section-about-us .titles{
+    width: 70%;
+    margin: 0px auto;
+    padding: 70px 0px;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+section.forth-section-about-us .titles h2{
+    font-size: 5rem;
+}
+
+section.forth-section-about-us .titles h2 em{
+    font-size: 5rem;
+}
+
+section.forth-section-about-us .interface .flex{
+    gap: 40px;
+    position: absolute;
+    right: 0;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: -2rem;
+}
+
+section.fifth-section-about-us-{
+    height: 55rem;
+    color: var(--clr--white);
+    background-color: var(--clr--dark);
+    position: relative;
+}
+
+section.fifth-section-about-us- .titles{
+    padding: 140px;
+    text-align: center;
+}
+
+section.fifth-section-about-us- .interface .flex{
+    gap: 40px;
+    position: absolute;
+    left: 0;
+    width: 90%;
+    align-items: center;
+}
+
+section.sixth-section-about-us{
+    height: 43rem;
+    color: var(--clr--white);
+    background-color: var(--clr--dark);
+    position: relative;
+}
+
+
+section.sixth-section-about-us .interface .flex{
+    gap: 40px;
+    position: absolute;
+    right: 0;
+    width: 90%;
+    align-items: center;
+    margin-top: -7rem;
+}
+
+section.seventh-section-about-us{
+    background-color: var(--clr--white);
+    width: 10%;
+    height: 1200vh;
+    position: relative;
+}
+
+section.seventh-section-about-us .interface{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding: 40px 4%;
+}
+
+section.seventh-section-about-us .interface h2{
+    font-size: 40px;
+}
+
+section.seventh-section-about-us .interface .flex{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+section.seventh-section-about-us .interface .flex .member-box{
+    width: 100%;
+}
+
+
+section.seventh-section-about-us .interface .flex .member-box-txt p{
+    margin-top: 20px;
+    text-align: justify;
+}
+
+section.seventh-section-about-us .interface .flex .member-box-img img{
+    width: 100%;
+}
+
+section.fifth-section-about-us-page{
+    background-color: var(--clr--white);
+    width: 100vw;
+    height: 220rem;
+    position: relative;
+}
+
+section.fifth-section-about-us-page .interface{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+section.fifth-section-about-us-page .interface h2{
+    margin-top: 40px;
+    font-size: 5rem;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+section.fifth-section-about-us-page .interface em{
+    margin-top: 40px;
+    font-size: 5rem;
+    font-family: "Libre Bodoni", serif;
+}
+
+section.fifth-section-about-us-page .interface .flex{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+section.fifth-section-about-us-page .interface .flex .member-box{
+    width: 100%;
+}
+
+section.fifth-section-about-us-page .interface .flex .member-box-txt h3{
+    margin-top: 20px;
+    font-size: 2.5rem;
+    text-align: justify;
+}
+
+section.fifth-section-about-us-page .interface .flex .member-box-txt p{
+    margin-top: 20px;
+    text-align: justify;
+    font-size: 1.5rem;
+}
+
+section.fifth-section-about-us-page .interface .flex .member-box-img img{
+    width: 100%;
+}
+
+#mais{
+    display: none;
+}
+
+#maisA{
+    display: none;
+}
+
+#maisB{
+    display: none;
+}
+
+#maisC{
+    display: none;
+}
+
+#maisD{
+    display: none;
+}
+
+/* OUR APPROACH */
+
+#our-approach{
+    background-image: url(/Assets/Our_Approach/ourapproach.jpg);
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 45rem;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+
+main .equal-sign-main-our-approach{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 3.75rem;
+    position: absolute;
+    right: 0;
+    margin-top: -15rem;
+}
+
+main .equal-sign-main-our-approach .line-1{
+    width: 9.188rem;
+    height: 3.625rem;
+    background-color: white;
+}
+
+/*
+main .equal-sign-main-wee{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 3.75rem;
+    position: absolute;
+    right: 0;
+    margin-top: 5rem;
+}
+
+main .equal-sign-main-wee .line-1{
+    width: 9.188rem;
+    height: 3.625rem;
+    background-color: white;
+}
+
+*/
+
+#wee-txt{
+    font-size: 3.8rem;
+}
+
+
+section.second-section-our-approach{
+    background-color: var(--clr--red);
+    height: 21.875rem;
+    width: 100vw;
+}
+
+section.second-section-our-approach .interface{
+    padding: 5rem 12rem;
+}
+
+
+section.second-section-our-approach .interface .flex .txt-second-section-our-approach-box h4{
+    color: var(--clr--white);
+    font-size: 1.5rem;
+    font-weight: 400;
+    width: 115%;
+}
+
+section.third-section-our-approach{
+    background-color: var(--clr--dark);
+    height: 50rem;
+    width: 100vw;
+    position: relative;
+}
+
+section.forth-section-our-approach{
+    background-color: var(--clr--red);
+    height: 60rem;
+    width: 100vw;
+    position: relative;
+}
+
+#txt-forth-section-our-approach{
+    transform: translateX(-100px);
+}
+
+section.fifth-section-our-approach{
+    background-color: var(--clr--dark);
+    height: 62.3rem;
+    width: 100vw;
+    position: relative;
+}
+
+section.third-section-our-approach .interface .flex, section.fifth-section-our-approach .interface .flex{
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    right: 0;
+}
+
+#flex-forth-section-our-approach{
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(10px);
+}
+
+#flex-fifth-section-our-approach{
+    transform: translateY(86px);
+}
+
+.interface .flex .txt-third-section-our-approach h2, .interface .flex .txt-forth-section-our-approach h2, .interface .flex .txt-fifth-section-our-approach h2{
+    color: var(--clr--white);
+    font-size: 3rem;
+    white-space: nowrap;
+    transform: translateX(12rem);
+}
+
+.interface .flex .txt-third-section-our-approach em, .interface .flex .txt-forth-section-our-approach em, .interface .flex .txt-fifth-section-our-approach em{
+    font-family: "Libre Bodoni", serif;
+    font-size: 3rem;
+    
+}
+
+body{
+    background-color: var(--clr--white);
+}
+
+.txt-forth-section-our-approach-mobile{
+    display: none;
+}
+
+/* CONTACT PAGE */
+
+#contact{
+    background-image: url(/Assets/Contact/contact_.jpg);
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 45rem;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+
+.form .interface .flex-contact{
+    height: 85rem;
+    word-wrap: break-word;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    gap: 3rem;
+    display: flex;
+}
+
+.form .interface .flex-contact .leftform{
+    width: 60%;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.form .interface .flex-contact .leftform form{
+    width: 100%;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+    gap: 1rem;
+}
+
+.form .interface .flex-contact .leftform form input{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 15px;
+    padding: 1rem;
+}
+
+.form .interface .flex-contact .leftform form textarea{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 15px;
+    padding: 1rem;
+}
+
+
+
+.form .interface .flex-contact .leftform h1{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 4rem;
+}
+
+.form .interface .flex-contact .leftform h1 em{
+    font-size: 4rem;
+    font-family: "Libre Bodoni", serif;
+}
+
+.form .interface .flex-contact .leftform p{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 2rem;
+}
+
+.form .interface .flex-contact .leftform p strong{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 2rem;
+}
+
+.form .interface .flex-contact .rightform h1{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 2rem;
+}
+
+.form .interface .flex-contact .rightform p{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 2rem;
+}
+
+.btn-form{
+    padding: 1rem 2.188rem;
+    font-size: 1.5rem;
+    background-color: rgba(255, 0, 0, 0);
+    border: 1px solid var(--clr--dark);
+    cursor: pointer;
+    color: var(--clr--dark);
+    transition: 0.4s ease-in-out;
+    margin-top: 1.25rem;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    width: 14rem;
+    margin-left: 395px;
+}
+
+
+.btn-form:hover{
+    background-color: var(--clr--dark);
+    color: var(--clr--white);
+}
+
+
+.formSectionBox{
+   
+    background-color: var(--clr--white);
+    display: flex;
+    width: 100vw;
+    color: var(--clr--dark);
+    gap: 40px;
+}
+
+.formSectionContact  .formSectionBox .formSectionForm{
+    width: 50%; 
+    color: var(--clr--dark);
+   
+}
+
+.formSectionBox .formSectionForm .form input, .formSectionBox .formSectionForm .form textarea{
+   width: 100%;
+   padding: 20px 10px;
+   margin-top: 20px;
+   font-size: 1rem;
+   font-family: "Plus Jakarta Sans", sans-serif;
+
+}
+
+
+.formSectionContact .formSectionBox  .formSectionForm h1{
+    font-size: 3rem;
+    color: var(--clr--dark);
+    font-family: "Plus Jakarta Sans", sans-serif; 
+ }
+
+ .formSectionContact .formSectionBox .formSectionForm h2{
+    font-weight: 200;
+    font-family: "Plus Jakarta Sans", sans-serif;
+ 
+ }
+ 
+.formSectionBox .formSectionForm .form #btn{
+    padding: 20px 80px;
+    margin-top: 10px;
+    background-color: var(--clr--white);
+    position: absolute;
+    right: 0;
+ }
+
+ .formSectionContact .formSectionBox .formSectionForm .mailNumber{
+    width: 50%;
+    padding: 170px 20px;
+
+}
+
+.formSectionContact .formSectionBox .mailNumber  .mailNumberh{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 10;
+
+}
+
+.formSectionContact .formSectionBox .mailNumber  .mailNumberp{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+
+}
+
+.formSectionContact .BlackCircleText{
+    width: 380px;
+    height: 250px;
+    position: absolute;
+    z-index: 1;
+    transform: translate(1050px, -200px);
+}
+
+#contact-form{
+    display: none;
+}
+
+
+.container{
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+form{
+    background-color: var(--clr--white);
+    max-width: 100%;
+    height: 50rem;
+}
+
+.input-single{
+    position: relative;
+    margin: 20px 0;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.input-single label{
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    transition: all 0.5s;
+    cursor: text;
+    font-size: 15px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.input{
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid black;
+    padding: 5px;
+    font-size: 15px;
+    outline: 0;
+}
+
+form .input-single .input:focus ~ label,
+form .input-single .input:valid ~ label{
+    transform: translateY(-24px);
+    font-size: 12px;
+}
+
+form .input-single .input-text:focus ~ label,
+form .input-single .input:valid{
+    transform: translateY(-190px);
+    font-size: 12px;
+}
+
+
+
+/* OUR STORY PAGE */
+
+#our-story{
+    background-image: url(/Assets/Our_Story/poster_our_story.jpg);
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 45rem;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+
+.txt-box-third-section-our-story p, .txt-box-forth-section-our-story p, .txt-box-fifth-section-our-story p{
+    margin-top: 2rem;
+}
+
+section.second-section-our-story{
+    background-color: var(--clr--dark);
+    width: 100vw;
+    height: 45.5rem;
+    position: relative;
+    color: var(--clr--white);
+}
+
+section.second-section-our-story .interface .flex{
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    left: 0;
+    gap: 5rem;
+    margin-top: 3rem;
+}
+
+section.second-section-our-story .interface .flex .txt-second-section-our-story{
+    width: 37vw;
+}
+
+section.second-section-our-story .interface .flex .txt-second-section-our-story h3{
+    font-size: 1.8rem;
+}
+
+
+section.third-section-our-story .interface .flex{
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    right: 0;
+    margin-top: 4rem;
+    gap: 4rem;
+}
+
+section.third-section-our-story{
+    background-color: var(--clr--pink);
+    width: 100vw;
+    height: 50rem;
+    position: relative;
+}
+
+section.forth-section-our-story{
+    background-color: var(--clr--red);
+    width: 100vw;
+    height: 50rem;
+    position: relative;
+    color: var(--clr--white);
+}
+
+section.forth-section-our-story .interface .flex{
+    align-items: center;
+    gap: 3rem;
+    margin-top: 3rem;
+    flex-direction: row-reverse;
+}
+
+section.fifth-section-our-story{
+    background-color: var(--clr--dark);
+    width: 100vw;
+    height: 47rem;
+    position: relative;
+    color: var(--clr--white);
+}
+
+section.fifth-section-our-story .interface .flex{
+    align-items: center;
+    gap: 3rem;
+}
+
+/* MOVIES PAGES */
+
+#subtitle-movies-all{
+    left: 0;
+    position: relative;
+    font-size: 1.5rem;
+}
+
+#subtitle-movies-formando{
+    left: 0;
+    position: relative;
+    font-size: 1.5rem;
+}
+
+#subtitle-movies-we-need{
+    left: 0;
+    position: relative;
+    font-size: 1.5rem;
+}
+
+/* All we have is us */
+
+#allwehaveisus{
+    background-image: url(/Assets/All_We_Have_Is_US/AllWeHaveIsUs_banner.jpg);
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 45rem;
+    background-color: var(--clr--dark);
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+
+section.section-all-we-have-is-us-page{
+    background-color: var(--clr--dark);
+    width: 100vw;
+    height: 70rem;
+    position: relative;
+    color: var(--clr--white);
+}
+
+.allWeHaveIsUsFrameText{
+    margin-top: 2rem;
+}
+
+#formando-rutas{
+    background-image: url(/Assets/Formando_Rutas/saltindustryinthetdesert.jpg);
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 45rem;
+    background-color: var(--clr--dark);
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+
+#we-need-to-get-more-funding{
+    background-image: url(/Assets/We_Need_To_Get_More_Funding/frogwithacamera.jpg);
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 45rem;
+    background-color: var(--clr--dark);
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Politics & Cookies Page */
+
+#cookiespolitics{
+    height: 330rem;
+    background-color: var(--clr--white);
+}
+
+/* Terms Pages */
+
+#terms{
+    background-image: url(/Assets/Terms_Conditions/image_50424321testelibro.jpg);
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 45rem;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+
+#story{
+    background-image: url(/Assets/Our_Story/poster_our_story.jpg);
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 45rem;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+
+#policies{
+    background-image: url(/Assets/Terms_Conditions/terms.jpg);
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 45rem;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+
+section.termsandconditions{
+    background-color: var(--clr--dark);
+    width: 100vw;
+    height: 130rem;
+    position: relative;
+}
+
+/* Footer Block */
+
+/* Comunity section */
+
+section.comunity{
+    background-color: var(--clr--pink);
+    width: 100vw;
+    height: 18rem;
+    position: relative;
+}
+
+section.comunity .interface .flex{
+    margin-top: 4rem;
+    width: 76vw;
+    justify-content: space-between;
+}
+
+section.comunity .interface .flex .txt-comunity-box h3{
+    font-size: 2.2rem;
+    font-weight: bold;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+section.comunity .interface .flex .txt-comunity-box h4{
+    transform: translateX(4rem);
+    font-size: 1.5rem;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 600;
+}
+
+section.comunity .interface .flex .txt-comunity-box em{
+    font-family: "Libre Bodoni", serif;
+    font-size: 2.2rem;
+    
+}
+
+.mobile-comunity{
+    display: none;
+}
+
+/* Colaborate section */
+
+section.colaborate{
+    background-color: var(--clr--dark);
+    width: 100vw;
+    height: 50rem;
+    position: relative;
+    background-image: url(/Assets/Home/08801415718teamhug.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+section.colaborate .interface .txt-box-colaborate{
+    color: var(--clr--white);
+    margin-top: 18rem;
+    text-align: center;
+    position: absolute;
+}
+
+section.colaborate .interface .txt-box-colaborate h3{
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+section.colaborate .interface .txt-box-colaborate h4{
+    transform: translateX(2rem);
+    font-size: 1.5rem;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+section.colaborate .interface .txt-box-colaborate h3 em{
+    font-family: "Libre Bodoni", serif;
+    font-size: 2.5rem;
+}
+
+section.colaborate .interface .txt-box-colaborate a{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 1rem;
+}
+
+.txt-box-colaborate-mobile{
+    display: none;
+}
+
+
+/* Footer */
+
+footer{
+    width: 100vw;
+    height: 23.5rem;
+    background-color: var(--clr--red);
+    position: relative;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+footer .interface .flex{
+    margin-top: 3rem;
+}
+
+footer .interface .flex .menu-footer{
+    white-space: nowrap;
+    margin-left: 10rem;
+    margin-top: -.7rem;
+    line-height: 2.5rem;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+footer .interface .flex .politics{
+    margin-left: 12rem;
+    margin-top: -0.7rem;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+footer .interface .flex .politics ul li{
+    white-space: nowrap;
+    line-height: 2.5rem;
+}
+footer .interface .flex .politics ul li a{
+    font-weight: 300;
+}
+
+footer .interface .flex .menu-footer ul li a{
+    font-weight: 300;
+}
+
+.social-medias{
+    display: flex;
+    justify-content: space-around;
+    margin-left: -0.2rem;
+    margin-top: .2rem;
+    gap: 1.5rem;
+}
+
+.social-medias a i{
+    font-size: 1.5rem;
+}
+
+.line-white-footer{
+    width: 27.625rem;
+    height: 7.125rem;
+    background-color: var(--clr--white);
+}
+
+.equal-sign-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 2.8rem;
+    margin-left: 18.5rem;
+    margin-top: -1.8rem;
+    justify-content: space-between;
+}
+
+#equal-sign-footer{
+    margin-right: -4rem;
+}
+
+#equal-sign-footer-about-us-second-section{
+    justify-content: space-evenly;
+    border: none;
+}
+
+.equal-sign-footer .line-1-footer{
+    width: 10rem;
+    height: 3rem;
+    background-color: var(--clr--white);
+}
+
+.footer-line{
+    position: absolute;
+    width: 100vw;
+    height: 2vh;
+    background-color: var(--clr--white);
+    bottom: 0;
+}
+
+#line-footer{
+    margin-bottom: 6rem;
+}
+/* MENU _ MOBILE */
+
+.btn-open-menu i{
+    color: white;
+    font-size: 5rem;
+    /* display: none; */
+}
+
+.menu-mobile{
+    background-color: var(--clr--red);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999999;
+    width: 0%;
+    overflow: hidden;
+    transition: .5s;
+    opacity: 0.9;
+}
+
+.menu-mobile ul{
+    text-align: right;
+}
+
+.menu-mobile ul li a{
+    color: var(--clr--white);
+    font-size: 3rem;
+    font-weight: 300;
+    padding: 2rem 7rem;
+    display: block;
+    text-align: center;
+}
+
+.menu-mobile ul li a:hover{
+    color: var(--clr--white);
+    font-weight: bolder;
+}
+
+.menu-mobile .btn-close{
+    padding: 5rem 5%;
+}
+
+.menu-mobile .btn-close i{
+    color: white;
+    font-size: 5rem;
+}
+
+.menu-footer-mobile{
+    display: none;
+}
+
+.menu-mobile.abrir-menu{
+    width: 40%;
+}
+
+
+#mobile-interface{
+    display: none;
+}
+
+#text-all-we-have{
+    margin-top: 2rem;
+}
+
+@media screen and (max-width: 1918px){
+
+}
+
+@media screen and (max-width: 1250px){
+   
+    .dyn-link-p{
+        font-size: 0.2rem;
+    }
+
+    header{
+        display: fixed;
+    }
+
+    header .interface .menu-desktop, header .interface .languages{
+        display: none;
+    }
+
+    
+
+    #btn-open-menu .equal-sign-menu-mobile .line-1-menu-mobile{
+        width: 4rem;
+        height: 0.5rem;
+        background-color: white;
+    }
+
+    main{
+        top: 0;
+    }
+
+    .flex{
+        flex-direction: column;
+    }
+
+    #mais, #maisA, #maisB, #maisC, #maisD{
+        font-size: 2rem;
+        font-family: "Plus Jakarta Sans", sans-serif;
+    }
+
+    #btnLeiaMais{
+        font-size: 0.5rem;
+        margin-top: 1.5rem;
+    }
+
+    /* Blocks */
+
+    
+
+    /* Buttons */
+
+    .btn-standard button{
+        padding: 15px 50px;
+        margin-top: 2rem;
+    }
+
+    .btn-black button{
+        padding: 15px 50px;
+        margin-top: 2rem;
+        font-size: 12px;
+    }
+
+    .btn-standard button{
+        font-size: 12px;
+    }
+
+    .btn-black a button{
+        font-size: 2rem;
+    }
+
+    form input[type=submit]{
+        padding: 10px 40px;
+        border: 1px solid black;
+        background-color: var(--clr--white);
+        color: var(--clr--dark);
+        font-size: 15px;
+        font-family: "Plus Jakarta Sans", sans-serif;
+        margin-bottom: 1rem;
+    }
+
+    form input[type=submit]:hover{
+        background-color: var(--clr--dark);
+        color: var(--clr--white);
+        transition: 0.5s ease-in-out;
+    }
+
+
+    /* HOME PAGE */
+
+    
+        /* Top section home */
+
+    .site-top .interface .flex .equal-sign{
+        display: none;
+    }
+
+    .site-top .interface .flex{
+        width: 100%;
+    }
+
+    .site-top .interface .flex .txt-site-top{
+        margin-left: 0px;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .site-top .interface .flex .txt-site-top h1{
+        width: 100%;
+        font-size: 45px;
+    }
+
+    .site-top .interface .flex .txt-site-top em{
+        width: 100%;
+        font-size: 50px;
+        margin-left: 0rem;
+    }
+
+    .site-top .interface .flex .txt-site-top .btn-standard{
+        margin-left: 0rem;
+
+    }
+
+    #txt-site-top{
+        margin-top: -10rem;
+        margin-left: 0rem;
+        font-family: "Plus Jakarta Sans", sans-serif;
+    }
+
+    #txt-site-top-our-approach{
+        margin-top: -10rem;
+        margin-left: 0rem;
+        font-family: "Plus Jakarta Sans", sans-serif;
+    }
+
+    #txt-site-top-our-story{
+        margin-top: -10rem;
+        margin-left: 0rem;
+        font-family: "Plus Jakarta Sans", sans-serif;
+    }
+    /*
+    #txt-site-top-projects{
+        margin-top: -10rem;
+        margin-left: -0rem;
+        font-family: "Plus Jakarta Sans", sans-serif;
+    }*/
+
+    #txt-site-top-weneedtogetfunding{
+        margin-top: -2rem;
+        margin-left: -5rem;
+        font-family: "Plus Jakarta Sans", sans-serif;
+    }
+
+    #txt-site-top-terms{
+        margin-top: -10rem;
+        margin-left: -0rem;
+        font-family: "Plus Jakarta Sans", sans-serif;
+    }
+
+    #txt-site-top-policies{
+        margin-top: -10rem;
+        margin-left: -0rem;
+        font-family: "Plus Jakarta Sans", sans-serif;
+    }
+
+    main .equal-sign-main{
+        margin-top: -7rem;
+    }
+
+    #equal-sign-main-pages{
+        display: none;
+    }
+
+    .site-top .interface .flex .equal-sign{
+        width: 0%;
+    }
+
+    main .equal-sign-main-left{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 56px;
+        position: absolute;
+        left: 0;
+        background-color: #f9a5a3;
+        margin-top: 30px;
+    }
+
+    main .equal-sign-main-left .line-1{
+        width: 9.188rem;
+        height: 3.5rem;
+        background-color: white;
+    }
+
+
+
+        /* Second section home */
+
+    .second-section-home{
+        width: 100%;
+        height: 100vh;
+        display: table;
+        
+    }
+
+    .second-section-home .interface .flex .txt-second-section-home{
+        width: 80%;
+        height: 50%;
+    }
+
+    .second-section-home .interface .flex .txt-second-section-home{
+        width: 100%;
+        height: 50%;
+    }
+
+    .second-section-home .interface .flex .txt-second-section-home h2, .second-section-home .interface .flex .txt-second-section-home em{
+        font-size: 40px;
+        width: 100%;
+    }
+
+    .second-section-home .interface .flex .txt-second-section-home p{
+        font-size: 20px;
+    }
+
+
+    .second-section-home .interface .flex .img-second-section-home{
+        width: 100%;
+        height: 50%;
+        
+    }
+
+    .second-section-home .interface .flex .img-second-section-home img{
+        width: 100%;
+    }
+
+        /* Third section home */
+
+    .third-section-home{
+        width: 100%;
+        display: table;
+    }
+
+    .third-section-home .interface .flex .img-third-section-home{
+        width: 100%;
+        margin: 0rem auto;
+    }
+
+    .third-section-home .interface .flex .img-third-section-home img{
+        width: 100%;
+        margin: 0rem auto;
+    }
+
+    .third-section-home .interface .flex .txt-third-section-home{
+        width: 100%;
+        margin: 0px auto;
+        margin-bottom: 20rem;
+    }
+
+    .third-section-home .interface .flex .txt-third-section-home h2, .third-section-home .interface .flex .txt-third-section-home em{
+        font-size: 40px;
+    }
+
+    .third-section-home .interface .flex .txt-third-section-home p{
+        font-size: 20px;
+        margin-top: 2rem;
+    }
+
+        /* Project Section Home */
+
+    
+
+    section.projects{
+        height: 34%;
+    }
+
+    .projects .project-title h2{
+        font-size: 40px;
+        display: none;
+    }
+
+    .projects .project-title .mobile-project-title{
+        font-size: 30px;
+        display: block;
+    }
+
+    .projects .project-title .mobile-project-title em{
+        font-family: "Libre Bodoni", serif;
+        font-size: 30px;
+    }
+
+    .projects .project-title em{
+        font-size: 30px;
+    }
+
+
+    .projects .interface .flex .project-box .txt-project-box h3{
+        font-size: 400rem;
+    }
+
+    /* Our Approach */
+
+    #second-section-our-approach{
+        height: 35rem;
+    }
+
+    #txt-second-section-our-approach-box{
+        font-size: 3rem;
+        margin-top: 1rem;
+        text-align: justify;
+        width: 122%;
+    }
+
+    #txt-second-approach{
+        width: 110rem;
+    }
+
+    #third-section-our-approach{
+        height: 100rem;
+    }
+
+    #third-section-our-approach .interface .flex{
+        flex-direction: column-reverse;
+        transform: translate(-12rem,3rem);
+
+    }
+
+
+    .interface .flex .txt-third-section-our-approach h2, .interface .flex .txt-forth-section-our-approach h2, .interface .flex .txt-fifth-section-our-approach h2{
+        white-space: nowrap;
+        transform: translateX(0px);
+        margin-bottom: 5rem;
+        font-size: 5.3rem;
+    }
+
+    .interface .flex .txt-third-section-our-approach h2 em{
+        font-size: 5.5rem;
+    }
+
+    .interface .flex .txt-third-section-our-approach h2{
+        margin-top: 2rem;
+    }
+
+    #forth-section-our-approach{
+        height: 100rem;
+    }
+
+    #forth-section-our-approach .interface .flex{
+        flex-direction: column-reverse;
+        transform: translate(18rem,-12rem);
+    }
+
+    .interface .flex .txt-forth-section-our-approach-mobile h2 em{
+        font-size: 5.5rem;
+    }
+
+    .interface .flex .txt-forth-section-our-approach-mobile h2{
+        transform: translateX(4rem);
+        margin-top: 2rem;
+    }
+
+
+
+    .txt-forth-section-our-approach-mobile{
+        display: block;
+        color: var(--clr--white);
+        margin-bottom: 7rem;
+        margin-left: -10rem;
+    }
+
+    .txt-forth-section-our-approach-mobile h2{
+        font-size: 5rem;
+        white-space: nowrap;
+    }
+
+    .txt-forth-section-our-approach{
+        display: none;
+    }
+
+    #fifth-section-our-approach{
+        height: 100rem;
+    }
+
+    #fifth-section-our-approach .interface .flex{
+        flex-direction: column-reverse;
+        transform: translate(-14rem,8rem);
+    }
+
+    #txt-fifth-section-our-approach em{
+        font-size: 5.5rem;
+    }
+
+    .txt-fifth-section-our-approach #txt-fifth-section-our-approach{
+        margin-top: 4rem;
+    }
+
+
+
+    .txt-fifth-section-our-approach-mobile{
+        display: block;
+        color: var(--clr--white);
+        margin-bottom: 7rem;
+        margin-left: -10rem;
+    }
+
+    .txt-fifth-section-our-approach-mobile h2{
+        font-size: 5rem;
+        white-space: nowrap;
+    }
+
+    #fifth-section-our-approach .interface .flex .txt-fifth-section-our-approach h2{
+        margin-top: 10rem;
+        margin-left: -20rem;
+    }
+
+
+    /* #fifth-section-our-approach{
+        height: 120rem;
+    }
+
+    .fifth-section-our-approach .txt-fifth-section-our-approach{
+        margin-bottom: 5.7rem;
+        margin-top: -10rem;
+        margin-left: -14rem;
+    }
+
+   #txt-fifth-section-our-approach{
+        transform: translateX(-50px);
+    }*/
+    /* Colaborate */
+
+    section.colaborate{
+        
+        /*background-image: url(/Assets/Home/teamhorizon_new.jpg);*/
+    
+    
+    }
+
+    #colaborate_h3{
+        font-size: 1px;
+        
+    }
+    
+    section.colaborate .interface .txt-box-colaborate{
+        padding: 15rem;
+        margin-left: -6.3rem;
+    }
+    
+    section.colaborate .interface .txt-box-colaborate h3 em{
+        font-family: "Libre Bodoni", serif;
+        font-size: 1.5rem;
+    }
+    
+    section.colaborate .interface .txt-box-colaborate a{
+        font-family: "Plus Jakarta Sans", sans-serif;
+        font-size: 1rem;
+    }
+    /* About US */
+
+    #second-section-about-us{
+        width: 100vw;
+        height: 370px;
+    }
+
+    #second-section-about-us .interface{
+        width: 100%;
+        margin: 0px auto;
+    }
+
+    #second-section-about-us .interface .flex{
+        width: 100%;
+    }
+
+    #second-section-about-us .interface .flex .txt-second-section-about-us-box{
+        width: 100%;
+    }
+
+    #second-section-about-us .interface .flex .txt-second-section-about-us-box h3{
+        width: 100%;
+        text-align: justify;
+        font-size: 30px;
+        margin-top: 3rem;
+    }
+
+    #second-section-about-us .interface .flex .txt-second-section-about-us-box p{
+        width: 100%;
+        font-size: 20px;
+    }
+
+
+    #third-section-about-us{
+        width: 100vw;
+        height: 210rem;
+        display: table;
+    }
+
+    #third-section-about-us .interface .flex{
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #third-section-about-us .interface .flex .img-box-third-section-about-us-page{
+        width: 100%;
+        height: 50%;
+        margin: 0rem auto;
+    }
+
+    #third-section-about-us .interface .flex .img-box-third-section-about-us-page img{
+        width: 100%;
+    }
+
+    #third-section-about-us .interface .flex .txt-box-third-section-about-us-page{
+        width: 100%;
+        height: 50%;
+        margin: 0rem auto;
+    }
+
+    #third-section-about-us .interface .flex .txt-box-third-section-about-us-page h3{
+        font-size: 20px;
+        width: 100%;
+    }
+
+    #third-section-about-us .interface .flex .txt-box-third-section-about-us-page p{
+        font-size: 15px;
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    #third-section-about-us .interface .flex .txt-box-third-section-about-us-page p b{
+        font-size: 15px;
+        width: 100%;
+    }
+
+    #forth-section-about-us{
+        width: 100vw;
+        height: 200rem;
+        display: table;
+    }
+
+    #forth-section-about-us .interface .flex{
+        width: 80%;
+        flex-direction: column-reverse;
+        margin-right: 10rem;
+    }
+
+
+    #forth-section-about-us .interface .flex .img-forth-section-about-us{
+        width: 100%;
+        height: 50%;
+        margin: 0rem auto;
+    }
+
+    #forth-section-about-us .interface .flex .img-forth-section-about-us img{
+        width: 100%;
+    }
+
+    #forth-section-about-us .interface .flex .txt-forth-section-about-us{
+        width: 100%;
+        height: 50%;
+        margin: 0rem auto;
+    }
+
+    #forth-section-about-us .interface .flex .txt-forth-section-about-us{
+        width: 100%;
+    }
+
+    #forth-section-about-us .interface .flex .txt-forth-section-about-us h2{
+        font-size: 8rem;
+    }
+    #forth-section-about-us .interface .flex .txt-forth-section-about-us p{
+        font-size: 2.5rem;
+    }
+
+    #forth-section-about-us .titles{
+        width: 80%;
+        margin-left: 8rem;
+    }
+
+    #forth-section-about-us .titles h2{
+        font-size: 6rem;
+    }
+
+    #forth-section-about-us .titles h2 em{
+        font-size: 6rem;
+    }
+
+    #forth-section-about-us .titles h3{
+        font-size: 3.5rem;
+    }
+
+    #forth-section-about-us .titles p{
+        width: 100%;
+        font-size: 3.5rem;
+    }
+
+    #fifth-section-about-us-{
+        width: 100vw;
+        height: 150rem;
+        display: table;
+    }
+
+    #fifth-section-about-us- .interface .flex{
+        width: 80%;
+        margin-left: 10rem;
+    }
+
+    #fifth-section-about-us- .interface .flex .img-fifth-section-about-us{
+        width: 100%;
+    }
+
+    #fifth-section-about-us- .interface .flex .img-fifth-section-about-us img{
+        width: 100%;
+    }
+
+    #fifth-section-about-us- .interface .flex .txt-fifth-section-about-us{
+        width: 100%;
+        margin-right: 8rem;
+    }
+
+    #fifth-section-about-us- .interface .flex .txt-fifth-section-about-us h2{
+        font-size: 8rem;
+    }
+    #fifth-section-about-us- .interface .flex .txt-fifth-section-about-us p{
+        font-size: 2.5rem;
+    }
+
+    #sixth-section-about-us{
+        width: 100vw;
+        height: 150rem;
+        display: table;
+    }
+
+    #sixth-section-about-us .interface .flex{
+        width: 80%;
+        margin-right: 10rem;
+        flex-direction: column-reverse;
+    }
+
+    #sixth-section-about-us .interface .flex .img-sixth-section-about-us{
+        width: 100%;
+    }
+
+    #sixth-section-about-us .interface .flex .img-sixth-section-about-us img{
+        width: 100%;
+    }
+
+    #sixth-section-about-us .interface .flex .txt-sixth-section-about-us{
+        width: 100%;
+    }
+
+    #sixth-section-about-us .interface .flex .txt-sixth-section-about-us h2{
+        font-size: 8rem;
+    }
+
+    #sixth-section-about-us .interface .flex .txt-sixth-section-about-us p{
+        font-size: 2.5rem;
+    }
+
+    #fifth-section-about-us-page{
+        width: 100vw;
+        height: 130rem;
+        display: table;
+    }
+
+    #fifth-section-about-us-page .interface h2{
+        font-size: 5rem;
+        font-family: "Plus Jakarta Sans", sans-serif;
+    }
+
+    #fifth-section-about-us-page .interface em{
+        font-size: 5rem;
+        font-family: "Libre Bodoni", serif;
+    }
+
+    #fifth-section-about-us-page .interface .flex .member-box .member-box-img{
+        width: 100%;
+        height: 50%;
+        margin: 0rem auto;
+    }
+
+    #sixth-section-about-us .interface .flex .member-box .member-box-img img{
+        width: 100%;
+    }
+
+    #fifth-section-about-us-page .interface .flex .member-box-txt{
+        width: 100%;
+        height: 50%;
+        margin: 0rem auto;
+    }
+
+    #fifth-section-about-us-page .interface .flex .member-box-txt h3{
+        font-size: 4rem;
+    }
+
+    #fifth-section-about-us-page .interface .flex .member-box-txt p{
+        font-size: 2rem;
+    }
+
+
+
+
+
+    /* Our Story */
+
+    #second-section-our-story{
+        height: 120rem;
+        position: relative;
+
+    }
+
+    .second-section-our-story > .interface .flex{
+        width: 100vw;
+        margin: 0px auto;
+    }
+
+    .second-section-our-story .interface .flex .img-second-section-our-story{
+        width: 80vw;
+        margin-top: 1rem;
+    }
+
+    #second-section-our-story .interface .flex .txt-second-section-our-story{
+        width: 80vw;
+        margin-top: 1rem;
+    }
+
+    #second-section-our-story .interface .flex .txt-second-section-our-story h3{
+        font-size: 3rem;
+        text-align: justify;
+        font-family: "Plus Jakarta Sans", sans-serif;
+    }
+
+    #third-section-our-story{
+        height: 150rem;
+        position: relative;
+    }
+
+    #third-section-our-story .interface .flex{
+        flex-direction: column-reverse;
+    }
+
+    #third-section-our-story .interface .flex .img-box-third-section-our-story{
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    #third-section-our-story .interface .flex .img-box-third-section-our-story img{
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    
+    #third-section-our-story .interface .flex .img-box-third-section-our-story{
+        width: 80vw;
+        margin-top: 1rem;
+    }
+
+    #third-section-our-story .interface .flex .txt-box-third-section-our-story{
+        width: 80vw;
+    }
+
+    #third-section-our-story .interface .flex .txt-box-third-section-our-story h2{
+        font-size: 6rem;
+        text-align: justify;
+        font-family: "Plus Jakarta Sans", sans-serif;
+    }
+
+    #third-section-our-story .interface .flex .txt-box-third-section-our-story p{
+        font-size: 3rem;
+        margin-top: 2rem;
+        text-align: justify;
+        font-family: "Plus Jakarta Sans", sans-serif;
+    }
+
+
+    #forth-section-our-story{
+        height: 125rem;
+        position: relative;
+    }
+
+    #forth-section-our-story .interface .flex{
+        flex-direction: column-reverse;
+    }
+
+    #forth-section-our-story .interface .flex .img-box-forth-section-our-story{
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    #forth-section-our-story .interface .flex .img-box-forth-section-our-story img{
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    
+    #forth-section-our-story .interface .flex .img-box-forth-section-our-story{
+        width: 80vw;
+        margin-top: 2rem;
+    }
+
+    #forth-section-our-story .interface .flex .txt-box-forth-section-our-story{
+        width: 80vw;
+    }
+
+    #forth-section-our-story .interface .flex .txt-box-forth-section-our-story h2{
+        font-size: 6rem;
+        text-align: justify;
+        font-family: "Plus Jakarta Sans", sans-serif;
+    }
+
+    #forth-section-our-story .interface .flex .txt-box-forth-section-our-story p{
+        font-size: 3rem;
+        margin-top: 4rem;
+        text-align: justify;
+        font-family: "Plus Jakarta Sans", sans-serif;
+    }
+
+    #fifth-section-our-story{
+        height: 140rem;
+        position: relative;
+    }
+
+    #fifth-section-our-story .interface .flex{
+        flex-direction: column-reverse;
+    }
+
+    #fifth-section-our-story .interface .flex .img-box-fifth-section-our-story{
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    #fifth-section-our-story .interface .flex .img-box-fifth-section-our-story img{
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    
+    #fifth-section-our-story .interface .flex .img-box-fifth-section-our-story{
+        width: 80vw;
+        margin-top: 1rem;
+    }
+
+    #fifth-section-our-story .interface .flex .txt-box-fifth-section-our-story{
+        width: 80vw;
+    }
+
+    #fifth-section-our-story .interface .flex .txt-box-fifth-section-our-story h2{
+        font-size: 6rem;
+        text-align: justify;
+        font-family: "Plus Jakarta Sans", sans-serif;
+    }
+
+    #fifth-section-our-story .interface .flex .txt-box-fifth-section-our-story p{
+        font-size: 3rem;
+        margin-top: 2rem;
+        text-align: justify;
+        font-family: "Plus Jakarta Sans", sans-serif;
+    }
+
+
+    /* Contact */
+
+    #contact-form{
+        display: block;
+    }
+
+    #contact-form-desktop{
+        display: none;
+    }
+    
+    .form{
+        height: 120rem;
+        
+    }
+
+    .form .interface .flex-contact{
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .form .interface .flex-contact .leftform{
+        width: 100%;
+    }
+
+    .form .interface .flex-contact .leftform h1{
+        width: 100%;
+    }
+
+    .btn-form{
+        align-self: end;
+    }
+
+    /* Movies */
+
+    section.section-all-we-have-is-us-page{
+        
+        height: 100rem;
+        
+    }
+
+    #section-all-we-have-is-us-page{
+        height: 130rem;
+    }
+
+    /* Formando Rutas */
+
+    #formando-rutas-sec{
+        height: 130rem;
+    }
+
+    /* Wee need to get more funding */
+
+    #we-need-section{
+        height: 150rem;
+    }
+
+    section.section-all-we-have-is-us-page .interface .allWeHaveIsUsFrameText h2{
+        margin-top: 5rem;
+        font-size: 4rem;
+    }
+
+
+    section.section-all-we-have-is-us-page .interface .allWeHaveIsUsFrameText #text-all-we-have{
+        margin-top: 3rem;
+        font-size: 3rem;
+    }
+
+    #we-need-section{
+        height: 130rem;
+    }
+
+    #wee-txt{
+        font-size: 5rem;
+    }
+
+    #subtitle-movies-all{
+        font-size: 3.5rem;
+        left: 0;
+        position: relative;
+    }
+
+    #subtitle-movies-formando{
+        font-size: 3.5rem;
+        left: 0;
+        position: relative;
+    }
+
+    #subtitle-movies-we-need{
+        font-size: 3.5rem;
+        left: 0;
+        position: relative;
+    }
+
+    /* Footer Blocks */
+
+    .comunity{
+        width: 100%;
+        height: 100px;
+        display: table;
+    }
+
+    .comunity .interface .flex{
+        display: none;
+    }
+
+    .comunity .interface .mobile-comunity{
+        width: 100%;
+        display: block;
+    }
+
+    .comunity .interface .mobile-comunity{
+        display: block;
+        font-size: 20px;
+        font-family: "Libre Bodoni", serif;
+    }
+
+    .colaborate{
+        width: 100%;
+        height: 100vh;
+        display: table;
+    }
+
+    .colaborate .interface .txt-box-colaborate{
+        display: none;
+    }
+
+    .colaborate .interface .txt-box-colaborate-mobile{
+        width: 100%;
+        display: block;
+        padding: 8rem;
+        margin-left: -8rem;
+    }
+
+    #subtitle-movies-all{
+        left: 0;
+        font-size: 2.5rem;
+        position: relative;
+    }
+
+    #subtitle-movies-formando{
+        left: 0;
+        font-size: 2.5rem;
+        position: relative;
+    }
+
+    #subtitle-movies-we-need{
+        left: 0;
+        font-size: 2.5rem;
+        position: relative;
+    }
+
+    /* Footer */
+
+    #footer-mobile{
+        width: 100vw;
+        height: 68rem;
+        background-color: var(--clr--red);
+        position: relative;
+    }
+
+    .menu-footer-mobile{
+        display: block;
+        margin-top: 4rem;
+        font-family: "Plus Jakarta Sans", sans-serif;
+    }
+
+    .menu-footer-mobile ul li{
+        display: block;
+        margin-bottom: 3rem;
+    }
+
+    .menu-footer-mobile .social-medias{
+        display: flex;
+        justify-content: start;
+        gap: 5rem;
+        margin-left: -0.1rem;
+    }
+
+    .menu-footer-mobile .social-medias a i{
+        font-size: 3rem;
+    }
+
+    .menu-footer, .politics{
+        display: none;
+    }
+
+    .footer-line{
+        display: none;
+    }
+
+    .equal-sign-footer{
+        display: none;
+    }
+
+    .footer{
+        width: 100%;
+        height: 100vh;
+        display: table;
+    }
+
+    .menu-mobile{
+        display: block;
+    }
+
+    #menu-mobile{
+        display: block;
+    }
+
+    #mobile-interface{
+        display: block;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .btn-open-menu i{
+        
+        display: block;
+        font-size: 10rem;
+    }
+
+    #menu-desktop{
+        display: none;
+    }
+
+    body{
+        background-color: var(--clr--white);
+    }
+
+    #cookiespolitics{
+        height: 340rem;
+        background-color: var(--clr--white);
+    }
+    /* Our Approach page */
+    
+    #third-section-our-approach{
+        
+        height: 120rem;
+       
+    }
+}
+
+@media screen and (max-width: 750px){
+
+    #our-approach{
+        height: 100rem;
+    }
+
+    #projects{
+        height: 12.5%;
+    }
+
+    section.projects{
+        height: 17%;
+    }
+
+    #txt-site-top-projects h1{
+        font-size: 30px;
+        margin-top: 4%;
+    }
+    #our-approach-{
+        height: 22%;
+    }
+
+    #about-us{
+        height: 100rem;
+    }
+
+    #contact{
+        height: 100rem;
+    }
+
+    #our-story{
+        height: 100rem;
+    }
+
+    #formando-rutas{
+        height: 100rem;
+    }
+
+    #we-need-to-get-more-funding{
+        height: 100rem;
+    }
+
+    #allwehaveisus{
+        height: 100rem;
+    }
+
+
+    #terms{
+        height: 100rem;
+    }
+
+    #story{
+        height: 100rem;
+    }
+
+    #policies{
+        height: 100rem;
+    }
+
+
+    #txt-site-top{
+        margin-top: -20rem;
+        margin-left: -52rem;
+        font-family: "Plus Jakarta Sans", sans-serif;
+    }
+
+    #txt-site-top-our-approach{
+        margin-top: 12rem;
+        margin-left: -37rem;
+        font-family: "Plus Jakarta Sans", sans-serif;
+    }
+
+    #txt-site-top-about-us{
+        margin-top: 12rem;
+        margin-left: -51rem;
+        font-family: "Plus Jakarta Sans", sans-serif;
+    }
+
+    #txt-site-top-our-story{
+        margin-top: 12rem;
+        margin-left: -50rem;
+        font-family: "Plus Jakarta Sans", sans-serif;
+    }
+    /*
+    #txt-site-top-projects{
+        margin-top: 12rem;
+        margin-left: -52rem;
+        font-family: "Plus Jakarta Sans", sans-serif;
+    }*/
+
+    #txt-site-top-contact{
+        margin-top: 12rem;
+        margin-left: -52rem;
+        font-family: "Plus Jakarta Sans", sans-serif;
+    }
+
+    #txt-site-top-terms{
+        margin-top: 12rem;
+        margin-left: -22rem;
+        font-family: "Plus Jakarta Sans", sans-serif;
+    }
+
+    #txt-site-top-policies{
+        margin-top: 12rem;
+        margin-left: -22rem;
+        font-family: "Plus Jakarta Sans", sans-serif;
+    }
+
+    #txt-site-top-formando-rutas{
+        margin-top: 12rem;
+        margin-left: -28rem;
+        font-family: "Plus Jakarta Sans", sans-serif;
+    }
+
+    #txt-site-top-weneedtogetfunding{
+        margin-top: 12rem;
+        margin-left: -6rem;
+        font-family: "Plus Jakarta Sans", sans-serif;
+    }
+
+    #txt-site-top-all-we-have-is-us{
+        margin-top: 12rem;
+        margin-left: -30rem;
+        font-family: "Plus Jakarta Sans", sans-serif;
+    }
+
+    
+
+    #dyn-link{
+        font-size: 1.8rem;
+    }
+
+    #btn-black-mobile{
+        padding: 15px 50px;
+        margin-top: 2rem;
+    }
+
+    #footer-mobile{
+        height: 110rem;
+    }
+
+    #equal-sign-main-wee{
+        margin-top: -1px;
+    }
+
+    /* Our Approach */
+   
+    #third-section-our-approach{
+        height: 120rem;
+    }
+
+    #third-section-our-approach .interface .flex{
+        flex-direction: column-reverse;
+        margin: 0 auto;
+        transform: translateY(-4.5rem);
+    }
+
+    #third-section-our-approach .interface .flex .txt-third-section-our-approach{
+        margin-top: 4rem;
+    }
+
+    #third-section-our-approach .interface .flex .txt-third-section-our-approach h2 em{
+        font-size: 6rem;
+    }
+
+    #forth-section-our-approach{
+        height: 120rem;
+    }
+
+    #forth-section-our-approach .interface .flex{
+        flex-direction: column-reverse;
+        margin: 0 auto;
+        transform: translateY(-4.5rem);
+    }
+
+    #flex-forth-section-our-approach .txt-forth-section-our-approach-mobile{
+        margin-top: 6rem;
+    }
+
+    #forth-section-our-approach .interface .flex .txt-forth-section-our-approach h2 em{
+        font-size: 6rem;
+    }
+
+    #fifth-section-our-approach{
+        height: 140rem;
+    }
+
+    #fifth-section-our-approach .interface .flex{
+        flex-direction: column-reverse;
+        margin: 0 auto;
+        transform: translateY(-1rem);
+    }
+
+    #flex-fifth-section-our-approach .txt-fifth-section-our-approach-mobile{
+        margin-top: 12rem;
+    }
+
+    #fifth-section-our-approach .interface .flex .txt-fifth-section-our-approach h2{
+        margin-top: 14rem;
+        margin-left: -45rem;
+    }
+
+    #fifth-section-our-approach .interface .flex .txt-fifth-section-our-approach h2 em{
+        font-size: 6rem;
+    }
+
+    /* About Us */
+
+    #third-section-about-us{
+        
+        height: 240rem;
+        
+    }
+
+    #forth-section-about-us{
+        
+        height: 250rem;
+        
+    }
+
+    #fifth-section-about-us{
+        
+        height: 185rem;
+        
+    }
+
+    #sixth-section-about-us{
+        
+        height: 180rem;
+        
+    }
+
+    #fifth-section-about-us-page .interface h2{
+        font-size: 8rem;
+    }
+
+    #fifth-section-about-us-page .interface em{
+        font-size: 8rem;
+    }
+
+    #fifth-section-about-us-page .interface .flex .member-box-txt h3{
+        font-size: 6rem;
+        margin-top: 2rem;
+    }
+
+    #fifth-section-about-us-page .interface .flex .member-box-txt p{
+        font-size: 4rem;
+    }
+
+
+
+    #mais, #maisA, #maisB, #maisC, #maisD{
+        font-size: 4rem;
+        font-family: "Plus Jakarta Sans", sans-serif;
+    }
+
+    #btnLeiaMais{
+        font-size: 1rem;
+        margin-top: 1.5rem;
+    }
+
+    
+    /* Policies */
+
+    #cookiespolitics{
+        height: 400rem;
+        background-color: #ed1d0a;
+    }
+
+    #conditionsterms{
+        height: 160rem;
+        background-color: var(--clr--white);
+    }
+
+    #privacy{
+        margin-top: -10rem;
+    }
+
+    #privacy p{
+        font-size: 2.5rem;
+    }
+
+    #cookies{
+        margin-top: -10rem;
+    }
+
+    #cookies p{
+        font-size: 2.5rem;
+        margin-bottom: 8rem;
+    }
+
+    #conditionsterms{
+        height: 360rem;
+    }
+
+    /* All We Have Is US */
+
+    .allWeHaveIsUsFrameText{
+        margin-top: -6rem;
+    }
+
+    
+
+    #section-all-we-have-is-us-page{
+        height: 160rem;
+    }
+
+    /* Formando Rutas */
+
+    #formando-rutas-sec{
+        height: 180rem;
+    }
+
+    /* Wee need to get more funding */
+
+    #we-need-section{
+        height: 180rem;
+    }
+
+    /* Contact */
+
+    .form{
+        height: 250rem;
+    }
+
+    .form .interface .flex-contact .leftform form{
+        gap: 2rem;
+    }
+
+    .form .interface .flex-contact .leftform{
+        width: 100%;
+    }
+
+    .form .interface .flex-contact .leftform h1{
+        font-size: 7rem;
+    }
+
+    .form .interface .flex-contact .leftform h1 em{
+        font-size: 7rem;
+    }
+
+    .form .interface .flex-contact .leftform p{
+        font-size: 5rem;
+    }
+
+    .form .interface .flex-contact .leftform p strong{
+        font-size: 5rem;
+    }
+
+    .form .interface .flex-contact .rightform h1{
+        font-size: 5rem;
+    }
+
+    .form .interface .flex-contact .rightform p{
+        font-size: 3.5rem;
+    }
+
+    .btn-form{
+        padding: 3rem rem;
+        font-size: 2rem;
+    }
+
+    #tksmessage1{
+        margin-top: 4rem;
+        font-size: 3rem;
+    }
+
+    #tksmessage2{
+        margin-top: 4rem;
+        font-size: 3rem;
+    }
+
+    textarea{
+        height: 10rem;
+    }
+}
